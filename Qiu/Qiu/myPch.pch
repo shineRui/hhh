@@ -1,0 +1,33 @@
+//
+//  myPch.pch
+//  糗事百科
+//
+//  Created by qianfeng on 15/10/30.
+//  Copyright (c) 2015年 shine瑞仔. All rights reserved.
+//
+
+#ifndef _____myPch_pch
+#define _____myPch_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "AFNetworking.h"
+#import "MJExtension.h"
+#define sc_w [UIScreen mainScreen].bounds.size.width
+#define sc_h [UIScreen mainScreen].bounds.size.height
+
+#define QIUSHIBAIKE @"http://m2.qiushibaike.com/article/list/suggest?count=30&readarticles=%5B113565791%5D&page=1&AdID=1446191936872744EB504F"
+#define QIUSHISHIPIN @"http://m2.qiushibaike.com/article/list/video?page=1&count=30&readarticles=[113575150,113579470]&rqcnt=10&r=08ee4e721446254369751"
+#define QIUSHICHUNWEN @"http://m2.qiushibaike.com/article/list/text?page=1&count=30&readarticles=[113577390,113577410]&rqcnt=16&r=08ee4e721446254813634"
+#define QIUSHICHUNTU @"http://m2.qiushibaike.com/article/list/imgrank?page=1&count=30&readarticles=[113571023,113583421]&rqcnt=18&r=08ee4e721446254878542"
+#define QIUSHIJINGHUA @"http://m2.qiushibaike.com/article/list/day?page=1&count=30&readarticles=[113579321]&rqcnt=20&r=08ee4e721446254948321"
+#define QIUSHIZUIXIN @"http://m2.qiushibaike.com/article/list/latest?page=1&count=30&readarticles=[113572564]&rqcnt=23&r=08ee4e721446255008791"
+
+#import "UIImageView+AFNetworking.h"
+typedef  void (^loadData)(BOOL isSuccess,NSInteger status);
+
+
+#import "Tool.h"
+
+#endif
