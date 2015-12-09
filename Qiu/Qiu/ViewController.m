@@ -18,6 +18,7 @@
     UIView *line;
     qiuModel *qiuM;
     CGFloat cell1Height;
+    UIScrollView *acee;
 }
 @end
 
